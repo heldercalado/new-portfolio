@@ -28,7 +28,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
-    height: 100%;
+    height: 100hv;
+    width: 100vw;
+
+}
+.hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#contact {
+    color: white;
+    background:linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('../img/photo-1528747045269-390fe33c19f2.jpg');
+    /* background-image: url("https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?cs=srgb&dl=apple-black-and-white-black-and-white-169573.jpg&fm=jpg"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    height: 100hv;
     width: 100vw;
 
 } 
@@ -75,6 +96,9 @@ body{
     border: 5px solid #eee;
     box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
 
+}
+.card-image-top-a:hover{
+    border: 4px solid rgb(139, 20, 20); 
 }
 .card-img-top {
    

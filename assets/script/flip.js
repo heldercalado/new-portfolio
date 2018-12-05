@@ -36,7 +36,7 @@ myFlip.prototype.init = function() {
     _this.intervalid = setInterval(function(){
         _this.run();
         
-    },150);
+    },100);
 }
 myFlip.prototype.letters = function(){
     
@@ -72,7 +72,7 @@ myFlip.prototype.run = function(){
        $(this.element).find(".new-link:first-of-type").slideDown("fast");
        
        
-       if (this.counter > 25) {
+       if (this.counter > this.arrletter.length) {
            //console.log("end");
            $(this.element).html();
         $(this.element).prepend('<div style="display: none;" class="new-link" name="link[]">' + this.letter + '</div>');
