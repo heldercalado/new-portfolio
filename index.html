@@ -569,9 +569,21 @@ $('body').on("click" , '.mybtn' , function(){
 var mydiv  = $(this).data('return');
 console.log(mydiv);
 if (mydiv === "trainprojectcomments"){
-    console.log("function called");
+    
     doTheFlip("All Aboard!!!");
-    }
+    $("#giftasticprojectcomments").hide();
+    $("#groupprojectcomments").hide();
+
+    //
+    }else if (mydiv === "giftasticprojectcomments"){
+    
+    $("#trainprojectcomments").hide();
+    $("#groupprojectcomments").hide();
+    } else if (mydiv === "trainprojectcomments"){
+    
+        $("#trainprojectcomments").hide();
+    $("#giftasticprojectcomments").hide();
+    } 
 $("#"+mydiv).fadeToggle("slow");
 
 
